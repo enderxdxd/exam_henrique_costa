@@ -3,39 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Henrique Costa - Backend Developer</title>
+    <meta name="description" content="Henrique Costa - Backend Developer specializing in JavaScript, TypeScript, React, AWS, and modern web technologies">
+    <meta name="keywords" content="Backend Developer, Fullstack, JavaScript, TypeScript, React, AWS, DevOps, Vancouver">
+    <meta name="author" content="Henrique Costa">
+    
+    <meta property="og:title" content="Henrique Costa - Backend Developer">
+    <meta property="og:description" content="Building scalable solutions with modern technologies">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://example.com/og-image.jpg">
+    
+   
+    <link rel="icon" type="image/svg+xml" href="logo.png">
+    
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <link rel="stylesheet" href="styles.css">
+    
+    <title>Henrique Costa - Backend Developer Portfolio</title>
 </head>
 <body>
-    
-    <header>
-        
+    <header id="header">
+        <div class="container">
             <img src="logo.png" alt="">
+            
             <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                <ul id="nav-menu">
+                    <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="#skills"><i class="fas fa-cogs"></i> Skills</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
                 </ul>
             </nav>
+           
         </div>
     </header>
 
     <main>
         <section id="home" class="hero">
             <div class="container">
-                <h2>Backend Developer</h2>
-                <p>Building scalable solutions with modern technologies</p>
+                <div class="hero-content">
+                    <div class="hero-avatar">
+                        👨‍💻
+                    </div>
+                    <h1>Henrique Costa</h1>
+                    <h2>Backend Developer</h2>
+                    <p>Building scalable solutions with modern technologies</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="cta-button">
+                            <i class="fas fa-rocket"></i> Let's Work Together
+                        </a>
+                        <a href="#about" class="secondary-button">
+                            <i class="fas fa-user"></i> Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item reveal">
+                        <span class="stat-number">4+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item reveal">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat-item reveal">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Technologies Mastered</span>
+                    </div>
+                    <div class="stat-item reveal">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Client Satisfaction</span>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="about" class="about">
             <div class="container">
                 <h2>About Me</h2>
-                <p>I am a passionate Backend/Fullstack Developer with over 4 years of experience building robust, scalable applications. Currently based in Vancouver, Canada, I specialize in JavaScript/TypeScript ecosystems, cloud technologies, and modern development practices. My journey began with Computer Engineering at UFG and has evolved through diverse projects ranging from fitness management systems to medical platforms.</p>
-                
-                <p>Throughout my career at companies like FlexFitnessCenter-PACTO and ClinicaCMD, I've developed customized software solutions that address strategic business needs. I'm particularly drawn to challenges that require innovative thinking, whether it's optimizing system performance, implementing CI/CD pipelines, or creating user-centric interfaces. When I'm not coding, you'll find me exploring car engineering concepts, studying biochemistry, or creating video content about technology.</p>
+                <div class="about-content">
+                    <div class="about-image">
+                        <div class="about-avatar">
+                            🚀
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <p>I am a passionate Backend/Fullstack Developer with over 4 years of experience building robust, scalable applications. Currently based in Vancouver, Canada, I specialize in JavaScript/TypeScript ecosystems, cloud technologies, and modern development practices. My journey began with Computer Engineering at UFG and has evolved through diverse projects ranging from fitness management systems to medical platforms.</p>
+                        
+                        <p>Throughout my career at companies like FlexFitnessCenter-PACTO and ClinicaCMD, I've developed customized software solutions that address strategic business needs. I'm particularly drawn to challenges that require innovative thinking, whether it's optimizing system performance, implementing CI/CD pipelines, or creating user-centric interfaces. When I'm not coding, you'll find me exploring car engineering concepts, studying biochemistry, or creating video content about technology.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -43,29 +109,47 @@
             <div class="container">
                 <h2>Technical Skills</h2>
                 <div class="skills-grid">
-                    <div class="skill-item">
+                    <div class="skill-item reveal">
+                        <div class="skill-icon">
+                            <i class="fab fa-js-square"></i>
+                        </div>
                         <h3>JavaScript / TypeScript</h3>
-                        <p>Advanced proficiency in modern JS/TS development</p>
+                        <p>Advanced proficiency in modern JS/TS development with ES6+, async/await, and type safety</p>
                     </div>
-                    <div class="skill-item">
+                    <div class="skill-item reveal">
+                        <div class="skill-icon">
+                            <i class="fab fa-react"></i>
+                        </div>
                         <h3>React & Next.js</h3>
-                        <p>Frontend frameworks for dynamic web applications</p>
+                        <p>Frontend frameworks for dynamic web applications with SSR, SSG, and modern React patterns</p>
                     </div>
-                    <div class="skill-item">
+                    <div class="skill-item reveal">
+                        <div class="skill-icon">
+                            <i class="fab fa-aws"></i>
+                        </div>
                         <h3>AWS Cloud Services</h3>
-                        <p>Cloud infrastructure and deployment solutions</p>
+                        <p>Cloud infrastructure and deployment solutions including EC2, Lambda, S3, and RDS</p>
                     </div>
-                    <div class="skill-item">
+                    <div class="skill-item reveal">
+                        <div class="skill-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
                         <h3>DevOps & CI/CD</h3>
-                        <p>Automated deployment and infrastructure management</p>
+                        <p>Automated deployment and infrastructure management with Docker, GitHub Actions, and Terraform</p>
                     </div>
-                    <div class="skill-item">
+                    <div class="skill-item reveal">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
                         <h3>SQL/NoSQL Databases</h3>
-                        <p>Database design and optimization</p>
+                        <p>Database design and optimization with PostgreSQL, MongoDB, and Redis for caching</p>
                     </div>
-                    <div class="skill-item">
+                    <div class="skill-item reveal">
+                        <div class="skill-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
                         <h3>Dart/Flutter</h3>
-                        <p>Cross-platform mobile application development</p>
+                        <p>Cross-platform mobile application development with native performance and beautiful UIs</p>
                     </div>
                 </div>
             </div>
@@ -73,31 +157,43 @@
 
         <section id="contact" class="contact">
             <div class="container">
-                <h2>Contact Me</h2>
-                <form class="contact-form">
+                <h2>Get In Touch</h2>
+                <form class="contact-form" id="contact-form">
                     <div class="form-group">
-                        <label for="name">Name *</label>
-                        <input type="text" id="name" name="name" placeholder="Your full name" required>
+                        <label for="name">
+                            <i class="fas fa-user"></i> Full Name *
+                        </label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
                     </div>
                     
                     <div class="form-group">
-                        <label for="email">Email *</label>
+                        <label for="email">
+                            <i class="fas fa-envelope"></i> Email Address *
+                        </label>
                         <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
                     </div>
                     
                     <div class="form-group">
-                        <label for="subject">Subject</label>
+                        <label for="subject">
+                            <i class="fas fa-tag"></i> Subject
+                        </label>
                         <input type="text" id="subject" name="subject" placeholder="What's this about?">
                     </div>
                     
                     <div class="form-group">
-                        <label for="message">Message *</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or inquiry..." required></textarea>
+                        <label for="message">
+                            <i class="fas fa-comment"></i> Message *
+                        </label>
+                        <textarea id="message" name="message" rows="6" placeholder="Tell me about your project, ideas, or just say hello..." required></textarea>
                     </div>
                     
                     <div class="form-buttons">
-                        <button type="submit" class="btn-primary">Send Message</button>
-                        <button type="reset" class="btn-secondary">Reset Form</button>
+                        <button type="submit" class="btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                        <button type="reset" class="btn-secondary">
+                            <i class="fas fa-redo"></i> Reset Form
+                        </button>
                     </div>
                 </form>
             </div>
@@ -106,8 +202,45 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Henrique Costa. All rights reserved.</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Connect With Me</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/enderxdxd" class="social-link" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/henrique-costa" class="social-link" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:henrique@example.com" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="tel:+17782226925" class="social-link" aria-label="Phone">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Location</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Vancouver, BC, Canada</p>
+                    <p><i class="fas fa-phone"></i> +1 (778) 222-6925</p>
+                    <p><i class="fas fa-envelope"></i> henrique@example.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Expertise</h3>
+                    <p>Backend Development</p>
+                    <p>Cloud Architecture</p>
+                    <p>DevOps & CI/CD</p>
+                    <p>Mobile Development</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Henrique Costa. All rights reserved. | Made with ❤️ and lots of ☕</p>
+            </div>
         </div>
     </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
