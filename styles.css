@@ -218,6 +218,12 @@ section h2 {
 .btn-secondary:hover {
     background-color: #6c7b7d;
 }
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
 
 
 footer {
@@ -225,6 +231,14 @@ footer {
     color: var(--white);
     text-align: center;
     padding: 2rem 0;
+}
+
+img {
+    max-width: 3%;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin: 10;
 }
 
 
